@@ -12,11 +12,12 @@ function Canvas({ width, height }: { width: number; height: number }) {
 
 		// Your drawing logic here
 		ctx.beginPath(); // reset ctx state
-		ctx.strokeStyle = "red"; // define color of the line
-		ctx.lineWidth = 10; // thickness of the line
-		ctx.moveTo(30, 70); // moveTo(x,y) -> starting point of the line
-		ctx.lineTo(130, 70); // line(x,y) -> end point of the line
-		ctx.stroke(); // draws the line
+		ctx.moveTo(30, 30);
+		ctx.lineTo(80, 80);
+		ctx.lineTo(130, 30);
+		ctx.lineTo(180, 80);
+		ctx.lineTo(230, 30);
+		ctx.stroke();
 	}, [width, height]); // Redraw if width or height changes
 
 	return (
